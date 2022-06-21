@@ -14,6 +14,13 @@
 		7BFE0B8D2861AAB0008D1A76 /* brainyDxInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE0B8C2861AAB0008D1A76 /* brainyDxInterviewTests.swift */; };
 		7BFE0B972861AAB0008D1A76 /* brainyDxInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE0B962861AAB0008D1A76 /* brainyDxInterviewUITests.swift */; };
 		7BFE0B992861AAB0008D1A76 /* brainyDxInterviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE0B982861AAB0008D1A76 /* brainyDxInterviewUITestsLaunchTests.swift */; };
+		7BFE0BAA2861AC9C008D1A76 /* TrackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE0BA92861AC9C008D1A76 /* TrackList.swift */; };
+		7BFE0BAD2861AD8E008D1A76 /* TrackDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE0BAC2861AD8E008D1A76 /* TrackDTO.swift */; };
+		7BFE0BAF2861AE56008D1A76 /* TrackListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE0BAE2861AE56008D1A76 /* TrackListViewModel.swift */; };
+		7BFE0BB22861AEC9008D1A76 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 7BFE0BB12861AEC9008D1A76 /* Collections */; };
+		7BFE0BB42861AEC9008D1A76 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 7BFE0BB32861AEC9008D1A76 /* OrderedCollections */; };
+		7BFE0BB62861B1B7008D1A76 /* TrackDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE0BB52861B1B7008D1A76 /* TrackDetails.swift */; };
+		7BFE0BB82861C7CF008D1A76 /* MKViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE0BB72861C7CE008D1A76 /* MKViewRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,12 @@
 		7BFE0B922861AAB0008D1A76 /* brainyDxInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brainyDxInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BFE0B962861AAB0008D1A76 /* brainyDxInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brainyDxInterviewUITests.swift; sourceTree = "<group>"; };
 		7BFE0B982861AAB0008D1A76 /* brainyDxInterviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brainyDxInterviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7BFE0BA92861AC9C008D1A76 /* TrackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackList.swift; sourceTree = "<group>"; };
+		7BFE0BAC2861AD8E008D1A76 /* TrackDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDTO.swift; sourceTree = "<group>"; };
+		7BFE0BAE2861AE56008D1A76 /* TrackListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListViewModel.swift; sourceTree = "<group>"; };
+		7BFE0BB52861B1B7008D1A76 /* TrackDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetails.swift; sourceTree = "<group>"; };
+		7BFE0BB72861C7CE008D1A76 /* MKViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKViewRepresentable.swift; sourceTree = "<group>"; };
+		7BFE0BB92861D5DD008D1A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFE0BB42861AEC9008D1A76 /* OrderedCollections in Frameworks */,
+				7BFE0BB22861AEC9008D1A76 /* Collections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +109,9 @@
 		7BFE0B7A2861AAA9008D1A76 /* brainyDxInterview */ = {
 			isa = PBXGroup;
 			children = (
+				7BFE0BB92861D5DD008D1A76 /* Info.plist */,
+				7BFE0BAB2861AD52008D1A76 /* Data */,
+				7BFE0BA72861AC6C008D1A76 /* Track */,
 				7BFE0B7B2861AAA9008D1A76 /* brainyDxInterviewApp.swift */,
 				7BFE0B7D2861AAA9008D1A76 /* ContentView.swift */,
 				7BFE0B7F2861AAAF008D1A76 /* Assets.xcassets */,
@@ -127,6 +145,25 @@
 			path = brainyDxInterviewUITests;
 			sourceTree = "<group>";
 		};
+		7BFE0BA72861AC6C008D1A76 /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				7BFE0BA92861AC9C008D1A76 /* TrackList.swift */,
+				7BFE0BAE2861AE56008D1A76 /* TrackListViewModel.swift */,
+				7BFE0BB52861B1B7008D1A76 /* TrackDetails.swift */,
+				7BFE0BB72861C7CE008D1A76 /* MKViewRepresentable.swift */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		7BFE0BAB2861AD52008D1A76 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7BFE0BAC2861AD8E008D1A76 /* TrackDTO.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +180,10 @@
 			dependencies = (
 			);
 			name = brainyDxInterview;
+			packageProductDependencies = (
+				7BFE0BB12861AEC9008D1A76 /* Collections */,
+				7BFE0BB32861AEC9008D1A76 /* OrderedCollections */,
+			);
 			productName = brainyDxInterview;
 			productReference = 7BFE0B782861AAA9008D1A76 /* brainyDxInterview.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +256,9 @@
 				Base,
 			);
 			mainGroup = 7BFE0B6F2861AAA9008D1A76;
+			packageReferences = (
+				7BFE0BB02861AEC9008D1A76 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 7BFE0B792861AAA9008D1A76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFE0BAA2861AC9C008D1A76 /* TrackList.swift in Sources */,
+				7BFE0BAD2861AD8E008D1A76 /* TrackDTO.swift in Sources */,
+				7BFE0BB62861B1B7008D1A76 /* TrackDetails.swift in Sources */,
+				7BFE0BB82861C7CF008D1A76 /* MKViewRepresentable.swift in Sources */,
 				7BFE0B7E2861AAA9008D1A76 /* ContentView.swift in Sources */,
 				7BFE0B7C2861AAA9008D1A76 /* brainyDxInterviewApp.swift in Sources */,
+				7BFE0BAF2861AE56008D1A76 /* TrackListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +469,8 @@
 				DEVELOPMENT_TEAM = K2JULSX6XW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = brainyDxInterview/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "location access description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +500,8 @@
 				DEVELOPMENT_TEAM = K2JULSX6XW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = brainyDxInterview/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "location access description";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -583,6 +636,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7BFE0BB02861AEC9008D1A76 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7BFE0BB12861AEC9008D1A76 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BFE0BB02861AEC9008D1A76 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		7BFE0BB32861AEC9008D1A76 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7BFE0BB02861AEC9008D1A76 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7BFE0B702861AAA9008D1A76 /* Project object */;
 }
